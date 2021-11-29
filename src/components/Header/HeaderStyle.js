@@ -6,8 +6,8 @@ export const ComponentHeader = styled.header`
   right: 0;
   left: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5px;
   z-index: 999;
+  padding: 30px 0 15px 0;
 
   .header__container {
     display: flex;
@@ -115,7 +115,13 @@ export const ComponentHeader = styled.header`
   }
 
   @media screen and (max-width: 1024px) {
+    padding: 20px 0 20px 0;
     .header__container {
+      .header__menu {
+        li {
+          padding-top: 17px;
+        }
+      }
       .header__networks {
         display: none;
       }
@@ -125,9 +131,15 @@ export const ComponentHeader = styled.header`
   @media screen and (max-width: 767px) {
     background-color: #141043 !important;
     padding: 15px;
+    top: 0;
 
     .header__container {
       justify-content: space-between;
+
+      .header__logo {
+        margin-bottom: 0;
+      }
+
       .header__nav {
         .header__btn-menu {
           display: block;
@@ -137,9 +149,10 @@ export const ComponentHeader = styled.header`
           background-color: #141043;
           display: block;
           position: absolute;
-          left: 25px;
-          right: 25px;
-          border-radius: 5px;
+          left: 20px;
+          right: 20px;
+          top: 70px;
+          border-radius: 2px;
           overflow: hidden;
           max-height: 0;
           z-index: 999;
@@ -150,6 +163,7 @@ export const ComponentHeader = styled.header`
 
           li {
             margin: 14px 0 14px -14px;
+            padding-top: 0;
 
             &:first-child {
               margin-left: 0;

@@ -3,18 +3,15 @@ import React from "react";
 //custom style
 import { ComponentHero } from "./HeroStyle";
 
-//images
-import HeroImage from "./img/hero-1.jpg";
+//hero - carousel
+import HeroCarousel from "./HeroCarousel";
 
 const Hero = (props) => {
   return (
     <ComponentHero className="hero">
-      <div className="hero__bg"></div>
-      <img
-        className="hero__img"
-        src={HeroImage}
-        alt="videograph-master-img-hero"
-      />
+      <div className="hero__description">
+        <HeroCarousel />
+      </div>
     </ComponentHero>
   );
 };
