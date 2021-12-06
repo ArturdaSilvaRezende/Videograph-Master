@@ -16,6 +16,8 @@ export const ComponentHeader = styled.header`
     margin: 0 auto;
 
     .header__logo {
+      margin-bottom: 15px;
+
       img {
         width: 100%;
         display: block;
@@ -116,7 +118,12 @@ export const ComponentHeader = styled.header`
 
   @media screen and (max-width: 1024px) {
     padding: 20px 0 20px 0;
+
     .header__container {
+      .header__logo {
+        margin-bottom: 0;
+      }
+
       .header__menu {
         li {
           padding-top: 17px;
@@ -129,7 +136,7 @@ export const ComponentHeader = styled.header`
   }
 
   @media screen and (max-width: 767px) {
-    background-color: #141043 !important;
+    background-color: #100028 !important;
     padding: 15px;
     top: 0;
 
@@ -146,12 +153,12 @@ export const ComponentHeader = styled.header`
         }
 
         .header__menu {
-          background-color: #141043;
+          background-color: #100028;
           display: block;
           position: absolute;
           left: 20px;
           right: 20px;
-          top: 70px;
+          top: 67px;
           border-radius: 2px;
           overflow: hidden;
           max-height: 0;

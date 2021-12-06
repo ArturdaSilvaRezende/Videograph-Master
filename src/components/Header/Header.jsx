@@ -29,7 +29,7 @@ const Header = (props) => {
         document.documentElement.scrollTop > 330
       ) {
         headerRef.current.style.position = "fixed";
-        headerRef.current.style.backgroundColor = "#141043";
+        headerRef.current.style.backgroundColor = " #100028";
         headerRef.current.classList.add("showHeader");
       } else {
         headerRef.current.style.position = "absolute";
