@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-//images
-import HeroImage from "./img/hero-1.jpg";
-
 export const ComponentHero = styled.section`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${HeroImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,89 +12,128 @@ export const ComponentHero = styled.section`
     display: none;
   }
 
-  .hero__description {
-    position: absolute;
-    left: 0;
-    top: 65%;
-    transform: translate(0, -65%);
-    z-index: 100;
-    width: 50%;
+  .carousel {
+    position: relative;
 
-    .carousel__description {
-      text-align: center;
-      height: 230px;
+    .carousel-indicators {
+      position: absolute;
+      top: 73%;
+      left: -600px;
 
-      h2 {
-        font-size: 2rem;
+      button {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
       }
-      h3 {
-        font-size: 3rem;
-      }
+    }
 
-      h2,
-      h3,
-      a,
-      .carousel__number {
-        color: #fff;
-        text-shadow: 0 1px 3px #000;
+    .carousel__item {
+      img {
+        display: block;
+        width: 100%;
+        height: 100vh;
       }
 
-      a {
-        border: 2px solid var(--blue);
-        margin-top: 20px;
-        padding: 7px;
-        display: inline-block;
-        box-shadow: 0 0px 10px var(--blue);
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 1rem;
-
-        &:hover {
-          color: var(--blue);
-        }
-      }
-
-      .carousel__number {
+      .carousel__description {
         position: absolute;
-        top: 110px;
-        transform: translateX(-50%);
+        top: 60%;
+        transform: translateY(-60%);
+        left: 100px;
+
+        text-align: center;
+        height: 230px;
+
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 3rem;
+        }
+
+        h2,
+        h3,
+        a {
+          color: #fff;
+          text-shadow: 0 1px 3px #000;
+        }
+
+        a {
+          margin-top: 20px;
+          font-size: 1rem;
+
+          &:hover {
+            color: var(--blue);
+          }
+        }
       }
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     background-size: 100% 100%;
-    height: 70vh;
+    height: 100%;
 
-    .hero__description {
-      width: 100%;
+    .carousel {
+      .carousel-indicators {
+        top: 80%;
+        left: 15%;
+        transform: translateX(-61%);
+      }
+
+      .carousel__item {
+        img {
+          height: 400px;
+        }
+
+        .carousel__description {
+          position: absolute;
+          top: 80%;
+          transform: translateY(-70%);
+          left: 50px;
+
+          h2 {
+            font-size: 1rem;
+            margin: 5px 0;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+      }
     }
   }
 
   @media screen and (max-width: 767px) {
     background-size: 100% 100%;
-    height: 70vh;
+    height: 300px;
 
-    .hero__description {
-      position: absolute;
-      left: 50%;
-      top: 60%;
-      transform: translate(-50%, -60%);
-      width: 100%;
-
-      h2,
-      h3 {
-        font-size: 1rem !important;
+    .carousel {
+      .carousel-indicators {
+        top: 80%;
+        left: 20px;
       }
 
-      a {
-        font-size: 0.8rem;
-      }
+      .carousel__item {
+        img {
+          height: 350px;
+        }
 
-      .carousel__description {
-        text-align: center;
-        height: 170px;
-        position: relative;
+        .carousel__description {
+          position: absolute;
+          top: 90%;
+          left: 0;
+          transform: translateY(-90%);
+          width: 100%;
+
+          h2,
+          h3 {
+            font-size: 1rem !important;
+          }
+
+          a {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
