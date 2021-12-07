@@ -7,6 +7,7 @@ import "./global-style.css";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
@@ -14,46 +15,7 @@ const App = () => {
       <Header />
       <Hero />
       <Main />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
     </>
   );
 };
