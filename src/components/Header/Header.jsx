@@ -1,12 +1,5 @@
 import React, { useEffect, useRef } from "react";
 
-//font awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-
 //custom style
 import { ComponentHeader } from "./HeaderStyle";
 
@@ -15,6 +8,7 @@ import Logo from "./img/logo.png";
 
 //components
 import HandleControlMenu from "./HandleControlMenu";
+import ComponentNetworks from "../Global/ComponentNetworks";
 
 const Header = (props) => {
   const headerRef = useRef(null);
@@ -53,28 +47,7 @@ const Header = (props) => {
         </nav>
 
         {/* social networks */}
-        <ul className="header__networks">
-          <li>
-            <a href=" #">
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-          </li>
-          <li>
-            <a href=" #">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </li>
-          <li>
-            <a href=" #">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-          <li>
-            <a href=" #">
-              <FontAwesomeIcon icon={faYoutube} />
-            </a>
-          </li>
-        </ul>
+        <ComponentNetworks className="header__networks" />
       </div>
     </ComponentHeader>
   );

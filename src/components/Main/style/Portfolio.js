@@ -173,19 +173,26 @@ export const ComponentPortfolio = styled.section`
     }
 
     .portfolio__modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+
       .portfolio__close {
         position: fixed;
-        top: 17%;
-        right: 20px;
-        transform: translateY(-17%);
-        z-index: 999;
+        right: 30px;
+        top: 55%;
       }
 
       iframe {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 90%;
+        position: relative;
+        top: 70%;
+        width: 80%;
+        height: 20%;
       }
     }
   }

@@ -117,7 +117,7 @@ export const ComponentHeader = styled.header`
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 20px 0 20px 0;
+    padding: 15px;
 
     .header__container {
       .header__logo {
