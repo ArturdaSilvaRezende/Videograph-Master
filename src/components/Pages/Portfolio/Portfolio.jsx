@@ -1,11 +1,18 @@
 import React from "react";
 
-const About = (props) => {
+//components
+import Breadcrumb from "../Breadcrumb/Breadcrump";
+import Footer from "../../Home/Footer/Footer";
+import PortfolioFilter from "./PortfolioFilter";
+
+const Portfolio = (props) => {
   return (
     <section>
-      <h1>Page Portfolio</h1>
+      <Breadcrumb title="Portfolio" bread="Home / Portfolio" />
+      <PortfolioFilter />
+      <Footer />
     </section>
   );
 };
 
-export default About;
+export default Portfolio;
