@@ -78,7 +78,7 @@ export const ComponentCounter = styled.section`
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 100px 0 180px 0;
+    padding: 80px 0 180px 0;
 
     .counter__container {
       flex-wrap: wrap;
