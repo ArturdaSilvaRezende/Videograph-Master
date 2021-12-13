@@ -85,10 +85,7 @@ export const ComponentPortfolio = styled.section`
 
   .portfolio__modal {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 97;
     width: 100%;
@@ -186,12 +183,12 @@ export const ComponentPortfolio = styled.section`
       .portfolio__close {
         position: fixed;
         right: 30px;
-        top: 55%;
+        top: 220px;
       }
 
       iframe {
         position: relative;
-        top: 70%;
+        top: 350px;
         width: 80%;
         height: 20%;
       }

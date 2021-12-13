@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ComponentFooter = styled.footer`
-  background-color: var(--bg-box);
+  background-color: #0a0119;
   padding: 40px 10px;
   margin-top: -2px;
 
