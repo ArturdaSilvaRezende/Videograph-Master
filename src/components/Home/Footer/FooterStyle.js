@@ -70,6 +70,7 @@ export const ComponentFooter = styled.footer`
       h2 {
         font-size: 1.3rem;
         font-family: "Play", sans-serif;
+        margin-bottom: 20px;
       }
 
       p {

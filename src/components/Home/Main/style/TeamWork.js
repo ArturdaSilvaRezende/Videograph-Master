@@ -121,6 +121,14 @@ export const ComponentTeamWork = styled.section`
     }
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 50px 0 0 0;
+
+    .team-work__contents {
+      margin: -40px 0 0 0;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     background-size: auto 100%;
 

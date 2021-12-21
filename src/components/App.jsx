@@ -10,6 +10,7 @@ import About from "./Pages/About/About";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
 import Services from "./Pages/Services/Services";
+import NotFound from "./NotFound";
 
 //react router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="Contact" element={<Contact />} />
           <Route path="Services" element={<Services />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

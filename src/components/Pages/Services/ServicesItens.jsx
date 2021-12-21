@@ -147,6 +147,7 @@ const ServicesItens = (props) => {
           infinite={true}
           autoPlay={props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={4000}
+          draggable={true}
         >
           <figure>
             <a href=" #">
