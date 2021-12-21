@@ -29,7 +29,6 @@ export const ComponentServices = styled.div`
         padding: 10px;
         transition: all ease-in 0.5s;
       }
-
       figcaption {
         h2 {
           color: #fff;
@@ -155,6 +154,7 @@ export const ComponentServices = styled.div`
   @media screen and (max-width: 767px) {
     .our-services__container {
       flex-direction: column;
+      margin-left: 5px;
 
       .our-services__item {
         width: 100%;

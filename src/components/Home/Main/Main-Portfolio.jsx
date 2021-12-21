@@ -43,7 +43,7 @@ const Portfolio = (props) => {
       setTimeout(() => {
         playRef.current.style.display = "none";
       }, 1000);
- 
+
       return setPlay(false);
     }
   }, [play, playRef]);

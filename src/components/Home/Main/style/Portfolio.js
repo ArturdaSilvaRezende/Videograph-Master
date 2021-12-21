@@ -117,7 +117,7 @@ export const ComponentPortfolio = styled.section`
 
   @media screen and (min-width: 767px) and (max-width: 1024px) {
     img {
-      height: 250px;
+      height: 180px;
     }
 
     .portfolio__container {

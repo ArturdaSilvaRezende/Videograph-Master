@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //breadcrumb
 import Breadcrumb from "../Breadcrumb/Breadcrump";
@@ -11,6 +11,10 @@ import AboutDescription from "./AboutDescription";
 import AboutTestimonial from "./AboutTestimonial";
 
 const About = (props) => {
+  useEffect(() => {
+    document.title = "Videograph / About";
+  }, []);
+
   return (
     <section>
       <Breadcrumb title="About" bread="Home / About" />

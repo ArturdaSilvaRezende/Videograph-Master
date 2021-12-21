@@ -23,11 +23,11 @@ const responsive = {
     items: 3,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 601 },
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
   },
 };
@@ -45,7 +45,7 @@ const OurBlog = (props) => {
         <Carousel
           responsive={responsive}
           className="our-blog__carousel"
-          showDots={true}
+          showDots={false}
           infinite={true}
           autoPlay={props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={4000}

@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const About = (props) => {
+//components
+import Footer from "../../Home/Footer/Footer";
+import Breadcrumb from "../Breadcrumb/Breadcrump";
+import ContactOptions from "./ContactOptions";
+import ContactGoogleMaps from "./ContactGoogleMaps";
+
+const Contact = (props) => {
+  useEffect(() => {
+    document.title = "Videograph / Contact Us";
+  }, []);
+
   return (
     <section>
-      <h1>Page Contacts</h1>
+      <Breadcrumb title="Contact us" bread="Home / contact" />
+      <ContactOptions />
+      <ContactGoogleMaps />
+      <Footer />
     </section>
   );
 };
 
-export default About;
+export default Contact;
