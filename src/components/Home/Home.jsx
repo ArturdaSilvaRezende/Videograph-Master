@@ -7,6 +7,7 @@ import "../global-style.css";
 import Hero from "./Hero/Hero";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
+import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <Main />
       <Footer />
+      <BtnBackToTop />
     </>
   );
 };

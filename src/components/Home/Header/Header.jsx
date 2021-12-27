@@ -31,7 +31,7 @@ const Header = (props) => {
 
     window.addEventListener("scroll", scrollTopHeaderShow);
     return () => window.removeEventListener("scroll", scrollTopHeaderShow);
-  }, []);
+  }, [headerRef]);
 
   return (
     <ComponentHeader className="header" ref={headerRef}>

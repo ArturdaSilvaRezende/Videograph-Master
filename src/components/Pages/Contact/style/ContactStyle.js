@@ -125,14 +125,10 @@ export const ComponentGoogleMaps = styled.div`
     padding: 30px 0 80px 0;
     display: flex;
 
-    .contact-location__map {
-      height: 430px;
-      width: 90%;
-    }
-
     .contact-location__form {
       width: 60%;
       margin-top: -10px;
+      margin-left: 30px;
 
       h2 {
         color: #fff;
@@ -194,10 +190,6 @@ export const ComponentGoogleMaps = styled.div`
     .contact-location__container {
       flex-direction: column;
 
-      .contact-location__map {
-        width: 100%;
-      }
-
       .contact-location__form {
         margin: 70px auto 0 auto;
       }
@@ -207,12 +199,6 @@ export const ComponentGoogleMaps = styled.div`
   @media screen and (max-width: 767px) {
     .contact-location__container {
       flex-direction: column;
-
-      .contact-location__map {
-        width: 100%;
-        height: 300px;
-        margin-top: -25px;
-      }
 
       .contact-location__form {
         margin: 50px auto 0 auto;

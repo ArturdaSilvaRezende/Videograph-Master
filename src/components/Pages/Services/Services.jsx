@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Breadcrumb from "../Breadcrumb/Breadcrump";
 import Footer from "../../Home/Footer/Footer";
 import ServicesItens from "./ServicesItens";
+import BtnBackToTop from "../../BtnBackToTop/BtnBackToTop";
 
 const Services = (props) => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Services = (props) => {
       <Breadcrumb title="Our Services" bread="Home / Services" />
       <ServicesItens />
       <Footer />
+      <BtnBackToTop />
     </section>
   );
 };

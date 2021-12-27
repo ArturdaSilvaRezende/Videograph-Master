@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Breadcrumb from "../Breadcrumb/Breadcrump";
 import Footer from "../../Home/Footer/Footer";
 import PortfolioFilter from "./PortfolioFilter";
+import BtnBackToTop from "../../BtnBackToTop/BtnBackToTop";
 
 const Portfolio = (props) => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Portfolio = (props) => {
       <Breadcrumb title="Portfolio" bread="Home / Portfolio" />
       <PortfolioFilter />
       <Footer />
+      <BtnBackToTop />
     </section>
   );
 };

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { ComponentGoogleMaps } from "./style/ContactStyle";
 
 //map
-import Map from "./Map";
+import GoogleMaps from "./GoogleMapsReact";
 
 const ContactGoogleMaps = (props) => {
   const [input, setInput] = useState({
@@ -37,19 +37,13 @@ const ContactGoogleMaps = (props) => {
       });
     }
   };
-  const location = {
-    address: "1600 Amphitheatre Parkway, Mountain View, california.",
-    lat: 37.42216,
-    lng: -122.08427,
-  };
 
   return (
     <ComponentGoogleMaps className="contact-location">
       <div className="container contact-location__container">
         {/* map */}
-        <div className="contact-location__map">
-          <Map location={location} zoomLevel={7} />
-        </div>
+
+        <GoogleMaps />
 
         {/* form */}
         <form className="contact-location__form" onSubmit={handleSubmit}>

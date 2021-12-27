@@ -8,7 +8,7 @@ export const ComponentPortfolio = styled.section`
 
   img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: block;
   }
 
@@ -90,6 +90,7 @@ export const ComponentPortfolio = styled.section`
     z-index: 97;
     width: 100%;
     display: none;
+    z-index: 2000;
 
     .portfolio__close {
       position: absolute;
@@ -146,6 +147,11 @@ export const ComponentPortfolio = styled.section`
   @media screen and (max-width: 767px) {
     padding: 20% 0;
 
+    img {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     .portfolio__container {
       grid-template-columns: 100%;
       gap: 30px;
@@ -172,25 +178,18 @@ export const ComponentPortfolio = styled.section`
 
     .portfolio__modal {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      height: 100%;
 
       .portfolio__close {
         position: fixed;
-        right: 30px;
-        top: 220px;
+        right: 15px;
+        top: 215px;
       }
 
       iframe {
-        position: relative;
+        position: fixed;
         top: 350px;
         width: 80%;
-        height: 20%;
+        height: 200px;
       }
     }
   }

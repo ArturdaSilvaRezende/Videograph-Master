@@ -9,6 +9,7 @@ import TeamWork from "../../Home/Main/Main-TeamWork";
 import Footer from "../../Home/Footer/Footer";
 import AboutDescription from "./AboutDescription";
 import AboutTestimonial from "./AboutTestimonial";
+import BtnBackToTop from "../../BtnBackToTop/BtnBackToTop";
 
 const About = (props) => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const About = (props) => {
       <Counter />
       <TeamWork />
       <Footer />
+      <BtnBackToTop />
     </section>
   );
 };

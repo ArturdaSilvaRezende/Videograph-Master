@@ -5,6 +5,7 @@ import Footer from "../../Home/Footer/Footer";
 import Breadcrumb from "../Breadcrumb/Breadcrump";
 import ContactOptions from "./ContactOptions";
 import ContactGoogleMaps from "./ContactGoogleMaps";
+import BtnBackToTop from "../../BtnBackToTop/BtnBackToTop";
 
 const Contact = (props) => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Contact = (props) => {
       <ContactOptions />
       <ContactGoogleMaps />
       <Footer />
+      <BtnBackToTop />
     </section>
   );
 };
