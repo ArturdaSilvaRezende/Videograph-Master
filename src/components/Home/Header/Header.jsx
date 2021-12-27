@@ -37,7 +37,7 @@ const Header = (props) => {
     <ComponentHeader className="header" ref={headerRef}>
       <div className="header__container">
         {/* Logo */}
-        <a href=" #" className="header__logo">
+        <a href="/" className="header__logo">
           <img src={Logo} alt="videograph-master-img-logo" />
         </a>
 
