@@ -8,8 +8,8 @@ export const ComponentPortfolio = styled.section`
 
   img {
     width: 100%;
-    height: 250px;
     display: block;
+    object-fit: cover;
   }
 
   .portfolio__container {
@@ -150,12 +150,20 @@ export const ComponentPortfolio = styled.section`
     img {
       width: 90%;
       margin: 0 auto;
+      height: 200px;
     }
 
     .portfolio__container {
       grid-template-columns: 100%;
       gap: 30px;
 
+      .portfolio__card--modify {
+        .portfolio__hero--three {
+          img {
+            height: 200px;
+          }
+        }
+      }
       .portfolio__card {
         grid-template-columns: 100%;
         gap: 30px;

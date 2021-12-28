@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React, { useCallback, useEffect } from "react";
 
 //custom style
 import { BtnStyle } from "./BtnStyle";
@@ -6,11 +6,8 @@ import { BtnStyle } from "./BtnStyle";
 //fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
 
 const BtnBackToTop = (props) => {
-  const buttonRef = useRef(null);
-
   const HandlebackToTop = useCallback(() => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -22,22 +19,18 @@ const BtnBackToTop = (props) => {
         document.body.scrollTop > 330 ||
         document.documentElement.scrollTop > 330
       ) {
-        buttonRef.current.style.display = "block";
+        document.querySelector(".BtnBackToTop").style.display = "block";
       } else {
-        buttonRef.current.style.display = "none";
+        document.querySelector(".BtnBackToTop").style.display = "none";
       }
     }
 
     window.addEventListener("scroll", scrollTop);
     return () => window.removeEventListener("scroll", scrollTop);
-  }, [buttonRef]);
+  }, []);
 
   return (
-    <BtnStyle
-      className="BtnBackToTop"
-      ref={buttonRef}
-      onClick={HandlebackToTop}
-    >
+    <BtnStyle className="BtnBackToTop" onClick={HandlebackToTop}>
       <FontAwesomeIcon icon={faArrowCircleUp} className="BtnBackToTop__icon" />
     </BtnStyle>
   );

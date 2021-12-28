@@ -98,7 +98,7 @@ const Portfolio = (props) => {
         </figure>
 
         {/* portfolio - 03 */}
-        <figure className="portfolio__card">
+        <figure className="portfolio__card portfolio__card--modify">
           <div className="portfolio__hero portfolio__hero--three">
             <img src={Work_4} alt="videograph-master-portfolio-work-4" />
 

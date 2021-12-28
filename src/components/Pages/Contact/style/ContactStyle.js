@@ -204,6 +204,8 @@ export const ComponentGoogleMaps = styled.div`
       .contact-location__form {
         margin: 50px auto 0 auto;
         width: 85%;
+        padding-left: 0;
+        text-align: center;
       }
     }
   }

@@ -26,8 +26,7 @@ export const ComponentAbout = styled.div`
 
       img {
         width: 100%;
-        display: block;
-        height: 200px;
+        object-fit: cover;
       }
 
       figure:nth-child(1) {
