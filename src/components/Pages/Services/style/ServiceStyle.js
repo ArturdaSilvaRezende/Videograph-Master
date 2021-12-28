@@ -4,7 +4,7 @@ import ServicesHero from "../img/calltos-bg.jpg";
 
 export const ComponentServices = styled.div`
   background-color: var(--bg-box);
-  padding: 80px 0;
+  padding: 80px 30px;
   margin-top: -2px;
 
   .our-services__container {
@@ -147,6 +147,8 @@ export const ComponentServices = styled.div`
   }
 
   @media screen and (max-width: 767px) {
+    padding: 80px 0;
+
     .our-services__container {
       flex-direction: column;
       margin-left: 5px;

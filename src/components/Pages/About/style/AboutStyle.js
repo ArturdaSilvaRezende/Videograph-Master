@@ -15,7 +15,7 @@ export const ComponentAbout = styled.div`
   }
 
   .about__container {
-    padding: 60px 0 40px 0;
+    padding: 60px 25px 40px 25px;
     display: flex;
     justify-content: space-between;
 
@@ -116,9 +116,19 @@ export const ComponentAbout = styled.div`
         order: 1;
         margin-bottom: 30px;
 
+        .about__services {
+          .about__services-item {
+            figcaption {
+              p {
+                width: 90% !important;
+              }
+            }
+          }
+        }
+
         .about__description-text {
           font-size: 1rem;
-          width: 90%;
+          width: 100%;
         }
       }
     }

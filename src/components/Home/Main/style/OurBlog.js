@@ -54,11 +54,12 @@ export const ComponentOurBlog = styled.section`
     padding: 50px 0 110px 0;
 
     .our-blog__container {
-      margin-bottom: -120px;
+      margin-bottom: -100px;
       margin-left: 50px;
 
       .our-blog__carousel {
-        padding: 0 15px 0 35px;
+        padding: 0 15px 0 25px;
+        left: -30px;
 
         .react-multiple-carousel__arrow--left {
           top: 130px;
