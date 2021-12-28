@@ -30,7 +30,7 @@ const BtnBackToTop = (props) => {
 
     window.addEventListener("scroll", scrollTop);
     return () => window.removeEventListener("scroll", scrollTop);
-  }, []);
+  }, [buttonRef]);
 
   return (
     <BtnStyle

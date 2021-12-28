@@ -11,9 +11,9 @@ export const ComponentOurServices = styled.section`
 
     //global
     .our-services__description {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 700;
-      color: var(--muted-gray);
+      color: var(--dark-gray);
       line-height: 1.8;
     }
 
@@ -22,6 +22,7 @@ export const ComponentOurServices = styled.section`
 
       .our-services__description {
         margin: 40px 0;
+        font-size: 0.8rem;
       }
     }
 
@@ -57,7 +58,7 @@ export const ComponentOurServices = styled.section`
         }
 
         p {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -88,7 +89,7 @@ export const ComponentOurServices = styled.section`
   }
 
   @media screen and (max-width: 767px) {
-    padding-top: 180px;
+    padding-top: 120px;
     .our-services__container {
       flex-direction: column;
 

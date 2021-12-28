@@ -145,7 +145,7 @@ export const ComponentPortfolio = styled.section`
   }
 
   @media screen and (max-width: 767px) {
-    padding: 20% 0;
+    padding: 20px 0 120px 0;
 
     img {
       width: 90%;

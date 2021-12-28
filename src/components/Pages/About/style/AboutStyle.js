@@ -8,7 +8,7 @@ export const ComponentAbout = styled.div`
 
   //global paragraph
   p {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     color: var(--muted-gray);
     line-height: 1.8;
@@ -75,14 +75,15 @@ export const ComponentAbout = styled.div`
 
             p {
               width: 95%;
-              font-size: 0.9rem;
+              font-size: 0.8rem;
             }
           }
         }
       }
 
       .about__description-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        width: 100%;
       }
     }
   }
@@ -130,7 +131,9 @@ export const ComponentAbout = styled.div`
 
       .about__pic {
         order: 1;
-        width: 100%;
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
 
         figure:nth-child(1) {
           img {
@@ -148,7 +151,7 @@ export const ComponentAbout = styled.div`
       .about__description {
         order: 2;
         width: auto;
-        margin: 30px 0 10px 25px;
+        margin: 15px 0 10px 25px;
 
         .about__services {
           flex-direction: column;
@@ -156,7 +159,7 @@ export const ComponentAbout = styled.div`
           .about__services-item {
             figcaption {
               p {
-                width: 85%;
+                width: 95%;
                 font-size: 1rem;
               }
             }
@@ -165,6 +168,7 @@ export const ComponentAbout = styled.div`
 
         .about__description-text {
           width: 95%;
+          font-size: 0.9rem;
         }
       }
     }

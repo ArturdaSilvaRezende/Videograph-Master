@@ -83,6 +83,10 @@ export const ComponentFooter = styled.footer`
 
       a {
         font-family: "Josefin Sans", sans-serif;
+
+        &:hover {
+          color: var(--blue);
+        }
       }
 
       ul {
@@ -119,7 +123,7 @@ export const ComponentFooter = styled.footer`
 
   .footer__copyright {
     p {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 700;
       color: var(--muted-gray);
       margin-top: 40px;

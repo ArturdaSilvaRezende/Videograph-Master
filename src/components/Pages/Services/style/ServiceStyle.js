@@ -37,10 +37,11 @@ export const ComponentServices = styled.div`
           margin: 15px 0;
         }
         p {
-          font-family: "Josefin Sans", sans-serif;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
           font-weight: 700;
           color: var(--muted-gray);
           line-height: 1.8;
+          font-size: 0.8rem;
         }
       }
     }
@@ -116,12 +117,6 @@ export const ComponentServices = styled.div`
     .our-services__container {
       .our-services__item {
         width: 47%;
-
-        figcaption {
-          p {
-            font-size: 0.9rem;
-          }
-        }
       }
     }
 
@@ -159,6 +154,13 @@ export const ComponentServices = styled.div`
       .our-services__item {
         width: 100%;
         margin-bottom: 30px;
+
+        figcaption {
+          p {
+            font-size: 0.9rem;
+            width: 90%;
+          }
+        }
       }
     }
 
