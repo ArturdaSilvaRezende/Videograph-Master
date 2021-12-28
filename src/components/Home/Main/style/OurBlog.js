@@ -9,11 +9,12 @@ export const ComponentOurBlog = styled.section`
   .our-blog__container {
     .our-blog__carousel {
       margin: 80px 0 0 0;
+      left: 1%;
       padding-left: 20px;
 
       .react-multiple-carousel__arrow--left {
         top: 150px;
-        left: 0;
+        left: 3px;
       }
 
       .react-multiple-carousel__arrow--right {
@@ -50,15 +51,32 @@ export const ComponentOurBlog = styled.section`
     }
   }
 
+  @media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .our-blog__container {
+      .our-blog__carousel {
+        left: 2%;
+        padding-left: 10px;
+        .react-multiple-carousel__arrow--left {
+          top: 150px;
+          left: -5px;
+        }
+
+        .react-multiple-carousel__arrow--right {
+          top: 150px;
+          right: 30px;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     padding: 50px 0 110px 0;
 
     .our-blog__container {
-      margin-bottom: -120px;
-      margin-left: 50px;
+      margin-bottom: -100px;
 
       .our-blog__carousel {
-        padding: 0 15px 0 35px;
+        padding: 0 15px 0 25px;
 
         .react-multiple-carousel__arrow--left {
           top: 130px;
@@ -67,7 +85,7 @@ export const ComponentOurBlog = styled.section`
 
         .react-multiple-carousel__arrow--right {
           top: 130px;
-          right: 0;
+          right: 15px;
         }
 
         .our-blog__carousel-item {
@@ -90,15 +108,16 @@ export const ComponentOurBlog = styled.section`
 
     .our-blog__container {
       margin-bottom: -100px;
+      padding-left: 0;
 
       .react-multiple-carousel__arrow--left {
         top: 135px !important;
-        left: 5px;
+        left: 0;
       }
 
       .react-multiple-carousel__arrow--right {
         top: 135px !important;
-        right: 35px;
+        right: 25px;
       }
 
       .our-blog__carousel-item {

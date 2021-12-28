@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ComponentContact = styled.div`
   background-color: var(--bg-box);
-  padding: 80px 0 60px 0;
+  padding: 80px 10px 60px 10px;
   margin-top: -2px;
 
   .contact__container {
@@ -122,13 +122,13 @@ export const ComponentGoogleMaps = styled.div`
   background-color: var(--bg-box);
 
   .contact-location__container {
-    padding: 30px 0 80px 0;
+    padding: 30px 30px 80px 30px;
     display: flex;
 
     .contact-location__form {
       width: 60%;
       margin-top: -10px;
-      margin-left: 30px;
+      padding-left: 40px;
 
       h2 {
         color: #fff;
@@ -199,6 +199,7 @@ export const ComponentGoogleMaps = styled.div`
   @media screen and (max-width: 767px) {
     .contact-location__container {
       flex-direction: column;
+      padding: 30px 0 80px 0;
 
       .contact-location__form {
         margin: 50px auto 0 auto;

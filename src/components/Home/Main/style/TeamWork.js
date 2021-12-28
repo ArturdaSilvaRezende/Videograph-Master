@@ -122,7 +122,7 @@ export const ComponentTeamWork = styled.section`
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 50px 0 0 0;
+    padding: 50px 30px 0 30px;
 
     .team-work__contents {
       margin: -40px 0 0 0;
