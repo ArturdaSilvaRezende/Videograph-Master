@@ -30,7 +30,7 @@ export const ComponentHero = styled.section`
     .carousel__item {
       img {
         display: block;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
       }
 

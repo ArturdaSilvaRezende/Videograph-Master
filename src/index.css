@@ -1,12 +1,13 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
   font-size: 100%;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 button {

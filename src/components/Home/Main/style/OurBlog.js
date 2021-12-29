@@ -5,7 +5,6 @@ import BlogBg from "../img/blog/blog-1.jpg";
 export const ComponentOurBlog = styled.section`
   background-color: var(--bg-box);
   padding: 80px 0 0 0;
-  overflow: hidden;
 
   .our-blog__container {
     .our-blog__carousel {

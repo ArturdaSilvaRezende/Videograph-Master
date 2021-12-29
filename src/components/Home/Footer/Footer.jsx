@@ -18,7 +18,7 @@ const Footer = (props) => {
     <ComponentFooter className="footer">
       <div className="container footer__container-networks">
         {/* logo */}
-        <a href=" #" className="footer__logo">
+        <a href="/" className="footer__logo">
           <img src={Logo} alt="videograph-master-img-logo" />
         </a>
 
