@@ -48,4 +48,4 @@ Seu aplicativo está pronto para ser implantado!
 
 #### O site do projeto está hospedado no "netlify", caso você queira fazer uma visita ao site, basta clicar no link abaixo
 
-[Videograph-Maste](https://videograph-master.netlify.app/).
+[Videograph-Master](https://videograph-master.netlify.app/).
