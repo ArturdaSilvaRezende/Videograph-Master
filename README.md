@@ -19,7 +19,7 @@ Eu utilizei as seguintes bibliotecas para me auxiliar na criação do projeto:
 * react-bootstrap
 * @react-google-maps/api
 
-## Available Scripts
+## Scripts Disponíveis
 
 No diretório do projeto, você pode executar:
 
